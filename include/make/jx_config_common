@@ -84,9 +84,7 @@ SEARCHDIRS += -I${JX_ROOT}/include/jximage \
               ${J_X11_INCLUDE_DIR} \
               ${J_INCLUDE_FREETYPE}
 
-ifdef ACE_ROOT
-  SEARCHDIRS += -I${ACE_ROOT}
-endif
+SEARCHDIRS += -I/usr/local/include
 
 ifdef J_HAS_GD
   J_GCC_LIBS := -lpng -ljpeg ${J_GCC_LIBS}
