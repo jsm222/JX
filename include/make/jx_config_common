@@ -4,9 +4,6 @@
 # Configure ACE, if necessary
 #
 
-ifndef ACE_ROOT
-  export ACE_ROOT = ${shell cd ${JX_ROOT}/ACE/ACE_wrappers; pwd}
-endif
 
 #
 # Check version of g++
