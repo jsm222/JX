@@ -51,8 +51,7 @@ endif
 # make variables
 
 LOADLIBES := ${J_STD_LIBS}
-LDFLAGS   := 
-
+LDFLAGS   := -L /usr/local/lib -lpcre
 #####
 
 .PHONY : default
