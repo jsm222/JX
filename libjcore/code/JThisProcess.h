@@ -13,10 +13,9 @@
 #if !defined _J_UNIX && !defined ACE_LACKS_PRAGMA_ONCE
 #pragma once
 #endif
-
 #include <JProcess.h>
+#include <ace/Event_Handler.h>
 #include <ace/Signal.h>
-
 class JThisProcess : public JProcess, public ACE_Event_Handler
 {
 public:

@@ -22,7 +22,7 @@
 
 	BASE CLASS = none
 
-	Copyright © 1994-96 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1994-96 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 

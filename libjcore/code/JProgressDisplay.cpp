@@ -105,7 +105,7 @@ JProgressDisplay::ProcessBeginning
 	)
 {
 	assert( itsCurrentProcess == kNoRunningProcess );
-
+	(void)message;
 	itsCurrentProcess      = processType;
 	itsAllowCancelFlag     = allowCancel;
 	itsAllowBackgroundFlag = allowBackground;

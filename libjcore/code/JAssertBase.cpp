@@ -32,12 +32,12 @@
 #include <string.h>
 #include <jMissingProto.h>
 #include <jAssert.h>
-
+/*
 static const JCharacter* kAssertActionEnvName = "J_ASSERT_ACTION";
 static const JCharacter* kAskUserAction       = "ask_user";
 static const JCharacter* kPrintAction         = "print";
 static const JCharacter* kIgnoreFailureAction = "silent";
-
+*/
 static JAssertBase::Action sDefaultAction = JAssertBase::kAbort;
 
 /******************************************************************************

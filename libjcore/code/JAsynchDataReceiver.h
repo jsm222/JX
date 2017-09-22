@@ -1,7 +1,7 @@
 /******************************************************************************
  JAsynchDataReceiver.h
 
-	Copyright © 1999-2000 by John Lindal. All rights reserved.
+	Copyright Â© 1999-2000 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -14,7 +14,7 @@
 
 #include <JPtrArray-JString.h>
 #include <ace/Svc_Handler.h>
-#include <ace/Synch_T.h>
+#include <ace/Synch.h>
 
 class JAsynchDataReceiverT
 {

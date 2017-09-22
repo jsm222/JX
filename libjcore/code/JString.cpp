@@ -20,7 +20,7 @@
 
 	BASE CLASS = none
 
-	Copyright © 1994-98 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1994-98 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -1991,7 +1991,7 @@ JAppendChar(char s1[], char c)
 
 	Assembled routines for dealing with string<->number conversion.
 
-	Copyright © 1992 John Lindal. All rights reserved.
+	Copyright ï¿½ 1992 John Lindal. All rights reserved.
 
  -----------------------------------------------------------------------------*/
 
@@ -2478,7 +2478,7 @@ JBoolean	neg,valid;
 	Assembled routines for dealing with string conversion.
 	These routines only require vanilla C.
 
-	Copyright © 1992 John Lindal. All rights reserved.
+	Copyright ï¿½ 1992 John Lindal. All rights reserved.
 
  -----------------------------------------------------------------------------*/
 

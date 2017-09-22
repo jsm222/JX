@@ -20,7 +20,7 @@
 
 	BASE CLASS = none
 
-	Copyright © 1994-98 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1994-98 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -247,28 +247,28 @@ JString16::CopyToPrivateString
 {
 	assert( str != itsString );
 
-	if (itsAllocLength < length || itsAllocLength == 0)
+	if (this->itsAllocLength < length || this->itsAllocLength == 0)
 		{
-		itsAllocLength = length + itsBlockSize;
+		this->itsAllocLength = length + this->itsBlockSize;
 
 		// We allocate the new memory first.
 		// If new fails, we still have the old string data.
 
-		JCharacter16* newString = new JCharacter16 [ itsAllocLength + 1 ];
+		JCharacter16* newString = new JCharacter16 [ this->itsAllocLength + 1 ];
 		assert( newString != NULL );
 
 		// now it's safe to throw out the old data
 
-		delete [] itsString;
-		itsString = newString;
+		delete [] this->itsString;
+		this->itsString = newString;
 		}
 
 	// copy the characters to the new string
 
-	memcpy(itsString, str, length * sizeof(JCharacter16));
-	itsString[ length ] = '\0';
+	memcpy(this->itsString, str, length * sizeof(JCharacter16));
+	this->itsString[ length ] = '\0';
 
-	itsStringLength = length;
+	this->itsStringLength = length;
 }
 
 /******************************************************************************
@@ -2183,7 +2183,7 @@ JAppendChar(JCharacter16 s1[], JCharacter16 c)
 
 	Assembled routines for dealing with string<->number conversion.
 
-	Copyright © 1992 John Lindal. All rights reserved.
+	Copyright ï¿½ 1992 John Lindal. All rights reserved.
 
  -----------------------------------------------------------------------------*/
 
@@ -2675,7 +2675,7 @@ JBoolean	neg,valid;
 	Assembled routines for dealing with string conversion.
 	These routines only require vanilla C.
 
-	Copyright © 1992 John Lindal. All rights reserved.
+	Copyright ï¿½ 1992 John Lindal. All rights reserved.
 
  -----------------------------------------------------------------------------*/
 
@@ -2794,14 +2794,14 @@ short i,j,len;
 
 size_t strlen16(const JCharacter16* str)
 {
-	size_t	len = 0xFFFFFFFF;
+	size_t	len = 0xFFFFFFFFFFFFFFFF;
 	
 #if !__POWERPC__
 	
 	do
 		len++;
 	while (*str++);
-	
+
 #else
 	
 	JCharacter16 * p = (JCharacter16 *) str - 1;

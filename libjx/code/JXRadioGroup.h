@@ -3,7 +3,7 @@
 
 	Interface for the JXRadioGroup class
 
-	Copyright © 1996 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1996 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 

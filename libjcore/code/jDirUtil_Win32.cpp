@@ -3,7 +3,7 @@
 
 	Directory utilities implemented for the Windows System.
 
-	Copyright © 2005 by John Lindal. All rights reserved.
+	Copyright ï¿½ 2005 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 

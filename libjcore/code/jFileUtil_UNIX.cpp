@@ -3,7 +3,7 @@
 
 	File utilities implemented for the UNIX System.
 
-	Copyright © 1996 by John Lindal. All rights reserved.
+	Copyright Â© 1996 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -34,7 +34,6 @@ JFileExists
 {
 	ACE_stat info;
 	return JI2B(
-			ACE_OS::lstat(fileName, &info) == 0 &&
 			ACE_OS::stat( fileName, &info) == 0 &&
 			S_ISREG(info.st_mode) );
 }

@@ -3,7 +3,7 @@
 
 	Interface for JOrderedSet class
 
-	Copyright © 1994-97 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1994-97 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 

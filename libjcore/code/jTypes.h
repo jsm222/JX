@@ -3,7 +3,7 @@
 
 	Defines portable types
 
-	Copyright © 1994-97 by John Lindal. All rights reserved.
+	Copyright @ 1994-97 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -375,7 +375,18 @@ typedef  JWord JDualHashValue;
 
 #else
 
-	figure out what to do!
+
+	#include <string>
+
+	namespace std
+	{
+		typedef ::string	string;
+	};
+
+	typedef int           JFStreamOpenMode;
+	typedef ios::seek_dir JIOStreamSeekDir;
+
+	const JFStreamOpenMode kJBinaryModifier = ios::bin;
 
 #endif
 

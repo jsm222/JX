@@ -10,7 +10,7 @@
 
 	BASE CLASS = none
 
-	Copyright © 1998 by John Lindal.  All rights reserved.
+	Copyright Â© 1998 by John Lindal.  All rights reserved.
 
  *****************************************************************************/
 

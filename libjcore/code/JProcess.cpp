@@ -147,7 +147,7 @@ JProcess::JProcess
 	(
 	const pid_t	pid,
 	const int	x
-	)
+	 )
 {
 	itsPID = pid;
 }

@@ -3,7 +3,7 @@
 
 	Interface for the JString16 class
 
-	Copyright © 1994-98 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1994-98 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -73,7 +73,7 @@ public:
 	JString16& operator+=(const JCharacter16* str);
 
 	operator const JCharacter16*() const;
-
+	
 	void	Set(const JString16& str);
 	void	Set(const JCharacter16* str);
 	void	Set(const JCharacter16* str, const JSize length);
@@ -1570,7 +1570,7 @@ JString16::PrivateGetCharacter
 {
 	return itsString [ index - 1 ];
 }
-
+	
 /******************************************************************************
  GetCharacterPtr (private)
 

@@ -294,7 +294,10 @@ public:
 			JIndex
 			GetIndex() const
 			{
-				return itsIndex;
+			  if(!itsIndex)
+			    return 1;
+			  
+			    return  itsIndex;
 			};
 
 			JBoolean

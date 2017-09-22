@@ -13,7 +13,7 @@
 #endif
 
 #include <ace/Svc_Handler.h>
-#include <ace/Synch_T.h>
+#include <ace/Synch.h>
 #include <JString.h>
 
 template <ACE_PEER_STREAM_1>

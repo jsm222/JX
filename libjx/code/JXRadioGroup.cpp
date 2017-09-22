@@ -7,7 +7,7 @@
 
 	BASE CLASS = JXWidget
 
-	Copyright © 1996 by John Lindal. All rights reserved.
+	Copyright ï¿½ 1996 by John Lindal. All rights reserved.
 
  ******************************************************************************/
 
@@ -178,7 +178,7 @@ JXRadioGroup::NewButton
 	itsButtons->Append(button);
 	if (itsSelection == NULL)
 		{
-		NewSelection(button);
+		  NewSelection(button);
 		}
 }
 
