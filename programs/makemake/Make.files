@@ -84,13 +84,7 @@ jHashFunctions
 
 literal: ${JMM_FILES}
 
--prefix ${PCREDIR}/.libs/
 
-.o maketables
-.o get
-.o study
-.o pcre
-#.o pcreposix
 
 -prefix ${REGEXDIR}/
 
