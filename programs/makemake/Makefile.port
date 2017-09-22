@@ -29,7 +29,7 @@ DEPENDFLAGS := ${J_COMPILER_DEPEND_FLAGS} \
 # make variables
 
 LOADLIBES := ${J_ACE_LIBS} ${J_GCC_LIBS}
-LDFLAGS   := -L /usr/local/lib -lpcre -LACE
+LDFLAGS   := -L /usr/local/lib -lpcre -lACE
 
 # JMemoryManager files
 
