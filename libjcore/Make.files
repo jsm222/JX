@@ -193,13 +193,7 @@ jRand
 
 # PCRE (Philip Hazel)
 
--prefix ${PCREDIR}/.libs/
 
-.o maketables
-.o get
-.o study
-.o pcre
-#.o pcreposix
 
 # regex (Henry Spencer)
 

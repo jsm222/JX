@@ -30,7 +30,7 @@ DEPENDFLAGS := ${J_COMPILER_DEPEND_FLAGS} \
 # make variables
 
 LOADLIBES := 
-LDFLAGS   := 
+LDFLAGS   :=  -L /usr/local/lib -lpcre
 
 # libgd (graphics formats)
 
@@ -68,8 +68,7 @@ include ${JX_ROOT}/include/make/default_lib_target
 .PHONY : Makefiles
 Makefiles:
 	@cd test; makemake; ${MAKE} Makefiles
-	@cd ${PCREDIR}; \
-     if ! test -e Makefile; then ./configure; fi;
+	if ! test -e Makefile; then ./configure; fi;
 
 #
 # string data
@@ -78,7 +77,7 @@ Makefiles:
 .PHONY : strings
 strings:
 ifneq (${COMPILE_STRINGS},0)
-	compile_jstrings ./strings/* \
+	${JX_ROOT}/bin/compile_jstrings ./strings/* \
       --code kJCoreDefaultStringData ${JCOREDIR}/jStringData.h
 endif
 
@@ -103,10 +102,8 @@ clean::
 
 .PHONY : regex
 regex:
-	@cd ${REGEXDIR}; ${MAKE} for_jcore
-	@cd ${PCREDIR}; \
-     if ! test -e Makefile; then ./configure; fi; \
-     ${MAKE}
+	cd ${REGEXDIR}; ${MAKE} for_jcore
+	
 
 .PHONY : gd
 gd:
