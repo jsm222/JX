@@ -35,7 +35,7 @@ endif
 # make variables
 
 LOADLIBES := -L${JLIBDIR} ${ljcore} ${J_ACE_LIBS} ${J_GCC_LIBS}
-LDFLAGS   := 
+LDFLAGS   := -L /usr/local/lib -lpcre
 
 #####
 
