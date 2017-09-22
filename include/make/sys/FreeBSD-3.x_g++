@@ -34,12 +34,12 @@ J_USE_THREADS := yes
 
 # Uncomment this if you want debugging versions of the libraries.
 
-J_COMPILE_DEBUG := -g
+#J_COMPILE_DEBUG := -g
 
 # Comment this out if ACE or other code gives you warnings that
 # you can't avoid.
 
-J_DIE_ON_WARNING := -Werror
+#J_DIE_ON_WARNING := 
 
 # Comment this out if new[] and delete[] are not overridable.
 
@@ -69,7 +69,7 @@ J_HAS_CTAGS_BUG = -D_J_CTAGS_BUG
 # Adjust these until everything compiles
 
 J_RAW_SYSTEM_STUFF := \
-  -DSIZEOF_LONG=4 -DSIZEOF_INT=4
+  -DSIZEOF_LONG=8 -DSIZEOF_INT=4
 
 #
 # Nothing below this line should ever need to be changed.
@@ -77,12 +77,12 @@ J_RAW_SYSTEM_STUFF := \
 
 # makemake variables
 
-LINKER := g++
+LINKER := c++
 
 # make variables
 
-CC       := gcc
-CXX      := g++
+CC       := cc
+CXX      := c++ -fPIC -Wnon-virtual-dtor -pipe  -fstack-protector -fno-strict-aliasing  -pthread -fno-strict-aliasing -Wall -W -Wpointer-arith -pipe -I/usr/local/include   -I/usr/local/include -D__ACE_INLINE__ 
 CPPFLAGS  = ${DEPENDFLAGS}
 CFLAGS    = ${J_MAKE_NEEDS_OUTPUT_ARG}
 CXXFLAGS  = ${J_MAKE_NEEDS_OUTPUT_ARG}
@@ -90,7 +90,7 @@ CXXFLAGS  = ${J_MAKE_NEEDS_OUTPUT_ARG}
 # libraries to link
 
 J_GCC_LIBS  := -lstdc++ -lm -pthread
-J_ACE_LIBS  := -L${JX_ROOT}/lib -lACE-${ACE_LIB_VERSION}
+J_ACE_LIBS  := -L${JX_ROOT}/lib -L/usr/local/lib -lACE
 J_X11_LIBS  := -L${JX_ROOT}/lib ${J_X11_LIB_DIR} -lXext -lXpm -lX11
 J_MESA_LIBS := -L${JX_ROOT}/lib -lGLU -lGL
 
