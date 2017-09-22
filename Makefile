@@ -326,8 +326,6 @@ freebsd3_x: prep
            include/make/jx_config
 	@ln -s ../../include/missing_proto/jMissingProto_empty.h \
            include/jcore/jMissingProto.h
-	@${TEST_ACE_CONFIG} config-freebsd-pthread.h ${CREATE_ACE_CONFIG}
-	@${TEST_ACE_MACROS} platform_freebsd_pthread.GNU ${CREATE_ACE_MACROS}
 	@${INSTALL_CMD}
 
 #
