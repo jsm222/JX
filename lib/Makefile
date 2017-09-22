@@ -42,7 +42,7 @@ install: install1 install2
 
 .PHONY: install1
 install1:
-	@cd ../ACE; ${MAKE} jxinstall
+	#@cd ../ACE; ${MAKE} jxinstall
 	@cd ../programs/makemake; ${MAKE} -f Makefile.port jxinstall
 	@${MAKE} Makefiles
 

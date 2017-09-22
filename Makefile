@@ -3,9 +3,6 @@
 # If ACE_ROOT is defined, we toss the copy included in the distribution and
 # create a symbolic link to the existing directory.
 
-ifndef ACE_ROOT
-  DEFAULT_ACE_ROOT := ${shell cd ACE/ACE_wrappers; pwd}
-endif
 
 #
 # tell user what options are available
